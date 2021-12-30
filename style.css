@@ -1,0 +1,25 @@
+div{
+    background-color: aqua;
+    height: 50px;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom right, red, yellow);
+}
+div button{
+    float: right;
+    color: red;
+    margin-left: 0px;
+    margin-top: 6px;
+    font-size: 30px;
+    text-decoration: none;
+    text-shadow: 1px;
+    text-align: center;
+    display: inline;
+    border: none;
+    background-color: aqua;
+    text-shadow: 2px 2px red;
+    box-shadow: 5px 5px royalblue;
+    
+}
+div.hover{
+    text-decoration: red;
+}
