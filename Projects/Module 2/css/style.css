@@ -1,0 +1,30 @@
+.author-name{
+    color: firebrick;
+}
+.sajek, .sundarban {
+    background-color: aquamarine;
+    border: 2px solid goldenrod;
+    border-radius: 20px;
+    margin: 10px 50px ;
+    padding: 20px 30px 20px 30px;
+}
+.saint{
+    margin: 10px 50px ;
+    padding: 20px 30px 20px 30px;
+    
+    border-bottom: 20px dotted burlywood;
+    border-right: 20px dotted burlywood;
+    border-radius: 20px;
+    background-color: rgb(78, 106, 141);
+}
+}
+.title{
+    font-size: 2em;
+    text-align: center;
+    color: rgb(5, 44, 1);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+div p{
+    text-align: justify;
+    color: indigo;
+}
