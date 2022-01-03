@@ -8,7 +8,7 @@ h1{
 .name{
     color: tomato;
 }
-section{
+.flex-container{
     display: flex;
     margin-bottom: 100px;
 }
@@ -46,4 +46,34 @@ p{
 }
 .para-second{
     padding-right: 10px;
+}
+.down{
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 50%;
+    box-shadow: 10px 10px 25px gray;
+    margin: 0% 5%;
+    padding: 2%;
+    width: 40%;
+}
+h2{
+    font-size: 40px;
+}
+.down-part{
+    background-image: url(../images/exp-bg.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+#web-dev{
+    border-left: 7px solid;
+    border-image: linear-gradient( red, tomato);
+    border-image-slice: 1;
+}
+#grf-dev{
+    border-left: 7px solid;
+    border-image: linear-gradient(blue, cyan);
+    border-image-slice: 1;
+}
+footer p{
+    text-align: center;
 }
