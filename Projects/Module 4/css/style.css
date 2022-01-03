@@ -10,15 +10,20 @@ h1{
 }
 section{
     display: flex;
+    margin-bottom: 100px;
 }
 .half-width{
-    padding-left: 7%;
+    padding-left: 5%;
+    padding-right: 5%;
     width: 50%;
 }
 .half-width img{
     width: 100%;
 }
-.hire-me-button{
+p{
+    text-align: justify;
+}
+.hire-me-button, .down-resume-button{
     text-decoration: none;
     padding: 10px 40px;
     background-image: linear-gradient(orange, tomato);
@@ -30,4 +35,15 @@ section{
 .top{
     background-image: url(../images/top-banner.png);
     background-repeat: no-repeat;
+}
+.second-half img{
+    width: 100%;
+}
+.second{
+    background-image: url(../images/dream-bg.png);
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.para-second{
+    padding-right: 10px;
 }
