@@ -1,0 +1,61 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Teko', sans-serif;
+    margin: 0;
+}
+.top{
+    color: white;
+    background-image: url(images/2.jpg);
+    background-size: cover;
+    height: 400px;
+    padding-right: 100px;
+    background-repeat: no-repeat;
+    padding-left: 400px;
+    text-align: right;
+    font-size: 30px;
+    padding-top: 150px ;
+    font-weight: 300;
+}
+.btn{
+    color: white;
+    padding: 10px 40px;
+    font-weight: 700px;
+    text-decoration: none;
+    background-image: linear-gradient(rgb(112, 53, 221), rgb(92, 8, 126));
+    border-radius: 7px;
+}
+.name{
+    color: rgb(110, 28, 165);
+}
+.nav-bar{
+    display: flex;
+    height: 150px;
+    padding-left: 10px;
+    background-image: linear-gradient(rgb(112, 53, 221), rgb(92, 8, 126));
+}
+nav .item{
+    
+    font-size: 30px;
+    display: flex;
+    color: white;
+    text-decoration: none;
+    padding: 3%;
+    display: inline-block;
+    
+}
+
+nav ul{
+    float: right;
+    
+}
+nav ul li{
+    display: inline-block;
+    
+}
+
+nav .logo{
+    float: left;
+    width: 20%;
+    padding-left: 50px;
+    font-size: 40px;
+}
