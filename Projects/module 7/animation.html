@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        @keyframes slidding {
+            0% {
+                background-color: rgb(158, 54, 54);
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                top: 200px;
+                background-color: yellow;
+            }
+
+            50% {
+                top: 0px;
+            }
+
+            75% {
+                top: 200px;
+            }
+
+            100% {
+                background-color: magenta;
+                left: 200px;
+                top: 0px;
+            }
+        }
+
+        .stage {
+            width: 300px;
+            height: 300px;
+            background-color: lightgreen;
+        }
+
+        .ball {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 50%;
+            position: relative;
+            animation: slidding 1s ease-in-out 0.5s infinite alternate;
+            animation-play-state: running;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Lates explore the Animation world</h1>
+    <div class="stage">
+        <div class="ball"></div>
+    </div>
+
+</body>
+
+</html>
