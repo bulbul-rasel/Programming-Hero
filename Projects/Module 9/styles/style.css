@@ -81,8 +81,9 @@ hr{
 .courses{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    align-items: center;
+    /* align-items: center; */
     grid-column-gap: 24px;
+
 }
 
 .course .course-banner img{
@@ -118,3 +119,39 @@ hr{
     border-radius: 50px;
     padding: 0px 10px;
 }
+/* Media Quary */
+/* Tab Device */
+@media only screen and (min-width: 688px) and (max-width: 992px){
+    .container{
+        width: 100%;
+        padding-left: 200px;
+    }
+    .players, .courses{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .blogs{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /* .player, .blog, .course{
+        flex-direction: column;
+    } */
+    
+    
+}
+
+/* Mobile phone */
+
+@media only screen and (max-width: 680px){
+    .container{
+        width: 100%;
+    }
+    .players,  .blogs , .courses{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player, .blog, .course{
+        flex-direction: column;
+    }
+    
+}
+
+
