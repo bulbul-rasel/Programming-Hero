@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variable</title>
+    <style>
+        :root {
+            --body-color: red;
+            --footer-color: blue;
+            --background-color: orange;
+        }
+
+        p {
+            color: var(--body-color);
+        }
+
+        h1 {
+            color: var(--footer-color);
+        }
+
+        h4 {
+            background-color: var(--background-color);
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>I am exploring Custom Property</h1>
+        <p>Welcome to my website</p>
+    </header>
+    <main>
+        <h2>My Awesome Content</h2>
+        <h4>Tiny heading</h4>
+
+    </main>
+    <footer>
+        <p><small>Copyright</small></p>
+
+    </footer>
+</body>
+
+</html>
