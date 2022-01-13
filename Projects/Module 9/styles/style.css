@@ -67,6 +67,7 @@ hr{
 }
 .blog-title{
     font-size: 20px;
+    margin-top: auto;
 }
 .blog-author{
     font-size: 16px;
@@ -111,7 +112,7 @@ hr{
 }
 .rating{
     color: #A2A2A2;
-    ;
+    padding-left: 27px;
 }
 .course-duration{
     background-color: #FEE5DF;
