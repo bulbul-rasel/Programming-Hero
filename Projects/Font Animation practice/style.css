@@ -67,6 +67,19 @@ body{
     margin: 10px 0px;
     font-family: 'Raleway', sans-serif;
 }
+@media only screen and (max-width: 680px) {
+    .container{
+        width: 100%;
+    }
+    .banner-left, .banner-right{
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+    }
+    .banner-right img{
+        width: 100%;
+        border: 5px solid#22bedd;
+    }
+}
 @keyframes typing {
     0%{
         content: '।';
