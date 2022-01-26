@@ -15,6 +15,15 @@ price2 += 11;
 
 // console.log(price2);
 
+// Modules
+
+var mango = 9;
+var person = 2;
+
+var remaining = mango % person;
+
+console.log(remaining);
+
 var age = 14;
 age++;
 console.log(age);
