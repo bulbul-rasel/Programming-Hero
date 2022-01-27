@@ -42,3 +42,10 @@ if (greenLight == false) {
 } else {
     console.log("You are not allowed to cross the road..")
 }
+
+var signal = ['green', 'yellow', 'red']
+
+if (signal[0] != 'green') { console.log('you can cross the road') }
+else if (signal[1] == 'yellow') { console.log('you should STOP') } else {
+    console.log('Lal Batti jole')
+}
