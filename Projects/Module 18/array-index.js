@@ -5,4 +5,6 @@ var indexNmbr = numbers[2];
 numbers[3] = 87;
 console.log(numbers);
 console.log(indexNmbr);
+console.log(numbers[1]);
+console.log(indexOf.numbers[1]);
 // console.log(index);
