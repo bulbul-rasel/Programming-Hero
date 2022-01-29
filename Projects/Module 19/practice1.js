@@ -8,7 +8,14 @@
 //     console.log('The Value is :', number, '*', i, '=', results);
 // }
 
-
+// 13 er namta using looop
+ function namta(number){
+     for(var i= 0; i<=10; i++){
+         var results = i* number;
+        console.log('The value is :', number, '*', i, '=', results);
+     }
+ }
+namta(13);
 // number er squer 
 
 // function squar() {
@@ -27,7 +34,7 @@
 
 // Convert Lower case 
 
-function lowerCase(name) {
-    return name.toLowerCase();
-}
-console.log(lowerCase('BulBul'));
+// function lowerCase(name) {
+//     return name.toLowerCase();
+// }
+// console.log(lowerCase('BulBul'));
