@@ -14,7 +14,7 @@
 // var oldest = findLargest(ages);
 // console.log(oldest)
 
-// TextTrackList, Fine the lowest Number 
+// TextTrackList, Find the lowest Number 
 
 function findLowest(number) {
     var low = number[0];
