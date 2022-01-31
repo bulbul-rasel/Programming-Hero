@@ -25,7 +25,7 @@ var army = 600;
 // var max = Math.max(business, minister, army);
 // console.log(max);
 
-// Using Function And Practice 1
+// Using Function And task 1
 
 // function findLeargest(first, second, third) {
 //     if (first > second && first > third) {
