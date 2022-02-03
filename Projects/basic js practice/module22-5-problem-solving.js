@@ -101,3 +101,4 @@ function even(number) {
     }
     console.log(store);
 }
+
