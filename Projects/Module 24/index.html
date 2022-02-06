@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Java Script DOM</title>
+
+</head>
+
+<body>
+    <header>
+        <h1>This is My Blog Page</h1>
+    </header>
+    <section>
+        <header>
+            <ul id="my-blog">
+                <li>my blog-1</li>
+                <li>my blog-2</li>
+                <li>my blog-3</li>
+                <li>my blog-4</li>
+            </ul>
+        </header>
+        <article class="blog">
+            <h3 id="first-title">This is Blog 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque voluptatum in, maiores eligendi, aliquid
+                sapiente molestias repellat sequi, magni ullam mollitia quam quisquam libero ipsum ipsam officia eum
+                quae exercitationem!</p>
+        </article>
+        <article class="blog">
+            <h3 id="second-title">This is Blog 2</h3>
+            <p>Quia numquam temporibus, enim tempora ducimus facere velit. Aspernatur modi reprehenderit quos quam
+                distinctio doloribus ratione voluptatum, temporibus optio ex fugit maiores totam dolor molestiae
+                suscipit, repudiandae, sit asperiores velit.</p>
+        </article>
+        <article class="blog">
+            <h3 id="third-title">This is Blog 3</h3>
+            <p>Eum, esse cumque quidem autem ex eligendi voluptatem a minus voluptas mollitia consequatur voluptatum,
+                deleniti minima? Quos ipsam corporis harum vero culpa earum, tenetur mollitia, reprehenderit officiis
+                necessitatibus, nesciunt voluptates.</p>
+        </article>
+    </section>
+    <script>
+        var thirdTitle = document.getElementById('third-title');
+        thirdTitle.style.color = ('yellow')
+
+        const blogs = document.getElementsByClassName('blog');
+        for (var blog of blogs) {
+            blog.style.border = '2px solid orange';
+            blog.style.borderRadius = '10px';
+            blog.style.margin = '5px';
+            blog.style.padding = '5px';
+
+        }
+        const li = document.createElement('li');
+        li.innerText = 'my blog-5';
+
+        const ul = document.getElementById('my-blog');
+
+        ul.appendChild(li);
+    </script>
+    <script src="first.js"></script>
+</body>
+
+</html>
