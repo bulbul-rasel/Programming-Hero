@@ -13,7 +13,7 @@
     <header>
         <h1>This is My Blog Page</h1>
     </header>
-    <section>
+    <section id="blogs" class="blogs">
         <header>
             <ul id="my-blog">
                 <li>my blog-1</li>
@@ -45,20 +45,41 @@
         var thirdTitle = document.getElementById('third-title');
         thirdTitle.style.color = ('yellow')
 
-        const blogs = document.getElementsByClassName('blog');
-        for (var blog of blogs) {
-            blog.style.border = '2px solid orange';
-            blog.style.borderRadius = '10px';
-            blog.style.margin = '5px';
-            blog.style.padding = '5px';
 
-        }
         const li = document.createElement('li');
         li.innerText = 'my blog-5';
 
         const ul = document.getElementById('my-blog');
 
         ul.appendChild(li);
+
+        // add article
+
+        const article = document.createElement('article');
+        article.classList.add('blog');
+        const h3 = document.createElement('h3');
+        h3.innerText = "My awesome blog -4";
+        const p = document.createElement('p');
+        p.innerText = 'Amar sonar bangla ami tomay valobasi, Chirodin tomar akash tomar batas amar prane bajay basi sonar bangla ami tomay valobasi';
+        article.appendChild(h3);
+        article.appendChild(p);
+
+        //parents of article
+
+        const blogSection = document.getElementById('blogs');
+        blogSection.appendChild(article);
+
+        const blogs = document.getElementsByClassName('blog');
+        for (var blog of blogs) {
+            blog.style.border = '2px solid orange';
+            blog.style.innerText = "tmi amar";
+            blog.style.borderRadius = '10px';
+            blog.style.margin = '5px';
+            blog.style.padding = '5px';
+
+        }
+
+
     </script>
     <script src="first.js"></script>
 </body>
