@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="drict-click">Event-Common</title>
+</head>
+
+<body>
+    <p id="click-event"></p>
+    <input id="name-field" type="text">
+    <button id="name-btn">Update</button>
+    <button onclick="functionHandle()">Just function Click</button>
+    <button id="directClick">Direct Click</button>
+    <script>
+        function functionHandle() {
+            const funHand = document.getElementById('click-event');
+            funHand.innerText = 'Function Handle';
+        }
+        document.getElementById('directClick').addEventListener('click', function () {
+            const directClickEvent = document.getElementById('click-event');
+            directClickEvent.innerText = 'Direct Click event direct function';
+        })
+
+        document.getElementById('name-btn').addEventListener('click', function () {
+            const nameField = document.getElementById('name-field');
+            const directClickEvent = document.getElementById('click-event');
+            directClickEvent.innerText = nameField.value;
+            nameField.value = '';
+
+        })
+    </script>
+</body>
+
+</html>
