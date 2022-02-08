@@ -33,9 +33,9 @@
             console.log('Li clicked');
             event.stopImmediatePropagation();
         })
-        document.getElementById('second').addEventListener('click', function () {
+        document.getElementById('second').addEventListener('click', function (event) {
             console.log('Li clicked');
-            // event.stopImmediatePropagation();
+            event.stopImmediatePropagation();
         })
         document.getElementById('list-container').addEventListener('click', function () {
             console.log('ul clicked');
