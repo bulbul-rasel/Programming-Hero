@@ -25,6 +25,18 @@
         document.getElementById('second').addEventListener('click', function () {
             console.log('Li clicked');
         })
+        document.getElementById('second').addEventListener('click', function (event) {
+            console.log('Li clicked');
+            // event.stopPropagation();
+        })
+        document.getElementById('second').addEventListener('click', function (event) {
+            console.log('Li clicked');
+            event.stopImmediatePropagation();
+        })
+        document.getElementById('second').addEventListener('click', function () {
+            console.log('Li clicked');
+            // event.stopImmediatePropagation();
+        })
         document.getElementById('list-container').addEventListener('click', function () {
             console.log('ul clicked');
         })
