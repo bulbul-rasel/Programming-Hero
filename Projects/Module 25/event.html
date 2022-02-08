@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <h1 onclick="alert('Ami ki korci vai...!!!')">Event Niye just click hobe...!</h1>
+    <h1 id="head" onclick="alert('Ami ki korci vai...!!!')">Event Niye just click hobe...!</h1>
     <button onclick="document.body.style.backgroundColor = 'yellow'">Click Me</button>
 
     <button onclick="clickMe()">Click Me: Red</button>
@@ -33,6 +33,12 @@
         // clickGreen.onclick = function () {
         //     document.body.style.backgroundColor = 'green';
         // }
+        // document.getElementById('head').addEventListener('mouseenter', function () {
+        //     console.log('Mouse entering');
+        // })
+        // document.getElementById('head').addEventListener('mouseout', function () {
+        //     console.log('Mouse Out');
+        // })
         // }
         // const clickGoldenRod = document.getElementById('click-golden-rod');
         // clickGoldenRod.addEventListener('click', clickMeGoldenRod);

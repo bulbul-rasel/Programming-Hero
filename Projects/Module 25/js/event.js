@@ -34,3 +34,9 @@ clickaqua.addEventListener('click', function () {
 document.getElementById('click-gray').addEventListener('click', function () {
     document.body.style.backgroundColor = 'gray';
 })
+document.getElementById('head').addEventListener('mouseenter', function () {
+    console.log('Mouse entering');
+})
+document.getElementById('head').addEventListener('mouseout', function () {
+    console.log('Mouse Out');
+})
