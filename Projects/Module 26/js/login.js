@@ -13,4 +13,4 @@ document.getElementById('login-submit').addEventListener('click', function () {
         alert('Please enter Valid Email and Password')
     }
 
-})
+});
