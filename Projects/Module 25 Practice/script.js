@@ -24,6 +24,9 @@ function clickMe() {
 
 // task 6
 
+document.getElementById('delete-btn').addEventListener('click', function () {
+    document.getElementById('delete-btn').style.display = 'none'
+})
 
 
 // task 7 
@@ -35,4 +38,9 @@ document.getElementById('send-mail').addEventListener('keyup', function (event) 
     else {
         sendBtn.setAttribute('disabled', true);
     }
+})
+
+// task 8 
+document.getElementById('makeOrange').addEventListener('dblclick', function () {
+    document.getElementById('makeOrange').style.backgroundColor = 'orange'
 })
