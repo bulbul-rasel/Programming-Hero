@@ -13,12 +13,13 @@ const displayUsers = data => {
         const div = document.createElement('div')
         div.innerHTML = `
         <img src=" ${user.picture.medium}">
-        <p> Name: ${user.name.title} ${user.name.first} ${user.name.last} 
-        </p>
+        <h3> Name: ${user.name.title} ${user.name.first} ${user.name.last} 
+        </h3>
         <p> City: ${user.location.city}</p>
         <p> Country: ${user.location.country}</p>
         <p> State: ${user.location.state}</p>
         <p> Street: ${user.location.street.name} , ${user.location.street.number}</p>
+        <p> Timezone: ${user.location.timezone.description} , ${user.location.timezone.offset}</p>
         
         `
         userDiv.appendChild(div)
