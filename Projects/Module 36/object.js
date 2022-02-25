@@ -1,5 +1,6 @@
+// Object Literal 
 const person = { name: "Shakib Al Hasan", job: "Cricketer" }
-
+// Using constractor Metod 
 const human = new Object()
 
 const student = Object.create(person)
