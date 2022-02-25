@@ -27,7 +27,7 @@ heroTreat(200, 50, 5)
 const khanTreat = kebria.treatDay.bind(heroKhan)
 khanTreat(300, 50, 7)
 // Call 
-// kebria.treatDay.call(heroBalam, 500)
+kebria.treatDay.call(heroBalam, 500)
 
 //apply
-kebria.treatDay.apply(heroBalam, [1000, 100, 15])
+// kebria.treatDay.apply(heroBalam, [1000, 100, 15])
