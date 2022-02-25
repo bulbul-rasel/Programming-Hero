@@ -4,7 +4,7 @@ const keys = Object.keys(bottol)
 const values = Object.values(bottol)
 const sob = Object.entries(bottol)
 
-Object.seal(bottol)
+// Object.seal(bottol)
 Object.freeze(bottol)
 bottol.price = 250;
 delete bottol.isCleaned;
