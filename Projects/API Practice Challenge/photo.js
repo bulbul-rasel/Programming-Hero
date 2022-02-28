@@ -27,14 +27,15 @@ const displayPhoto = photos => {
 
 const loadPhoto = (id) => {
     console.log(id);
-    const url = `https://jsonplaceholder.typicode.com/photos`
+    const url = `https://jsonplaceholder.typicode.com/photos/${id}`
     fetch(url)
         .then(res => res.json())
-        .then(data => displaySingle(data[0]))
+        .then(data => displaySingle(data))
 
     document.getElementById('photo-Container').innerHTML = ''
 }
 const displaySingle = (ids) => {
+    console.log(ids);
     const photoContainer = document.getElementById('photo-Container')
     const div = document.createElement('div')
     div.innerHTML = `
