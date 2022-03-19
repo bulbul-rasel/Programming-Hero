@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 
 const Test = (props) => {
 
-    const [count, setCount] = useState(0)
+    const [count, setCount] = useState(0);
+
     const plus = () => {
         setCount(count + 1);
     }

@@ -1,14 +1,21 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { useState } from 'react';
 import './App.css';
+import AllProducts from './Components/AllProducts/AllProducts';
 import Menubar from './Components/Menubar/Menubar';
 import Test from './Components/Test/Test';
-function count(num) {
-  console.log('Paici');
-}
+
 function App() {
+  const [count, setCount] = useState(0);
+
+  const setCartCount = () => {
+    setCount(count + 1)
+  }
   return (
     <div className="App">
-      <Test count={count}></Test>
+
+      <Menubar count={count}></Menubar>
+      <AllProducts setCartCount={setCartCount}></AllProducts>
     </div>
   );
 }
