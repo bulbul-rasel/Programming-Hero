@@ -28,9 +28,9 @@ const Meal = () => {
                 }
             </div>
             <div className="meal-details">
-                <h3>Selected Meal</h3>
+                <h3 className='meal-name'>Selected Meal</h3>
                 {food.map((item) => (
-                    <h5>{item.strMeal}</h5>
+                    <h5 className='meal-single'>{item.strMeal}</h5>
                 ))}
             </div>
         </div>
