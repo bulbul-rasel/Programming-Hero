@@ -3,12 +3,12 @@ import MySelf from "../MySelf/MySelf"
 import Brother from '../Brother/Brother'
 import Sister from '../Sister/Sister'
 
-const Father = ({ house, ornament }) => {
+const Father = ({ house }) => {
     return (
         <div>
             <h2>Father</h2>
             <p>House: {house}</p>
-            <MySelf ornament={ornament}></MySelf>
+            <MySelf></MySelf>
             <Brother></Brother>
             <Sister></Sister>
         </div>
