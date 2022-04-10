@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import useCart from '../../Hookes/useCart';
 import useProducts from '../../Hookes/useProducts';
 import Cart from '../Cart/Cart';
@@ -11,6 +12,7 @@ const Orders = () => {
         const rest = cart.filter(pd => pd.id !== product.id)
         setCart(rest)
     }
+    const navigate = useNavigate();
     return (
         <div className='shop-container'>
             <div className='review-item-container'>
@@ -23,7 +25,9 @@ const Orders = () => {
                 }
             </div>
             <div className="cart-container">
-                <Cart cart={cart}> </Cart>
+                <Cart cart={cart}>
+                    <button onClick={() => navigate('/shipment')}>Proceed Shipping</button>
+                </Cart>
             </div>
 
         </div >

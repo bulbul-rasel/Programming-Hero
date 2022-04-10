@@ -1,16 +1,18 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './SignUp.css'
 import auth from '../../firebase.init'
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 
 const SignUp = () => {
 
-    const [email, setEmail] = useState();
-    const [password, setPassword] = useState();
-    const [confirmPassword, setConfirmPassword] = useState();
-    const [error, setError] = useState();
-    const [createUserWithEmailAndPassword] = useCreateUserWithEmailAndPassword(auth)
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [confirmPassword, setConfirmPassword] = useState('');
+    const [error, setError] = useState('');
+    const [createUserWithEmailAndPassword, user] = useCreateUserWithEmailAndPassword(auth);
+
+    const navigate = useNavigate();
 
     const handleEmailBlur = event => {
         setEmail(event.target.value)
@@ -22,6 +24,9 @@ const SignUp = () => {
 
     const handleConfirmPasswordBlur = event => {
         setConfirmPassword(event.target.value)
+    }
+    if (user) {
+        navigate('/shop')
     }
 
     const handleCreateUser = event => {
@@ -37,11 +42,7 @@ const SignUp = () => {
             return;
         };
 
-        createUserWithEmailAndPassword(email, password)
-            .then(result => {
-                const user = result.user;
-                console.log(user);
-            });
+        createUserWithEmailAndPassword(email, password);
     }
 
 
@@ -65,7 +66,7 @@ const SignUp = () => {
                         <input onBlur={handleConfirmPasswordBlur} type="password" name="confirm-password" id="" required />
                     </div>
                     <p>{error}</p>
-                    <input className='form-submit' type="button" value="Sign Up" />
+                    <input className='form-submit' type="submit" value="Sign Up" />
                 </form>
                 <p>
                     Already have an Account? <Link className='form-link' to="/login">Login</Link>
